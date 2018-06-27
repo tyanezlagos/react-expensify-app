@@ -3,7 +3,12 @@
 exports[`should render ExpensesSummary correctly with multiple expenses 1`] = `
 <div>
   <p>
-    Viewing 2 expenses totalling $1,096.95
+    Viewing 
+    2
+     
+    expenses
+     totalling 
+    $1,542.22
   </p>
 </div>
 `;
@@ -11,7 +16,12 @@ exports[`should render ExpensesSummary correctly with multiple expenses 1`] = `
 exports[`should render ExpensesSummary correctly with single expense 1`] = `
 <div>
   <p>
-    Viewing 1 expenses totalling $1.95
+    Viewing 
+    1
+     
+    expense
+     totalling 
+    $110.12
   </p>
 </div>
 `;
