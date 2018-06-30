@@ -25,7 +25,7 @@ test('should setup remove expense action object', () => {
     });
 });
 
-test('should remove expenses from firebase', () => {
+test('should remove expenses from firebase', (done) => {
     const store = createMockStore({});
     const id = expenses[0].id;
     store.dispatch(startRemoveExpense({ id })).then(() => {
@@ -50,7 +50,7 @@ test('should setup edit expense action object', () => {
     });
 });
 
-test('should setup edit expense from firebase', () => {
+test('should edit expense from firebase', (done) => {
     const store = createMockStore({});
     const id = expenses[0].id;
     const note = 'new note to expense';
@@ -105,7 +105,7 @@ test('should add expense to database and store', (done) => {
 
 });
 
-test('should add expense with defaults to database and store', () => {
+test('should add expense with defaults to database and store', (done) => {
     const store = createMockStore({});
     const defaultData = {
         description: '',
@@ -139,7 +139,7 @@ test('should setup set expenses action object with data', () => {
     })
 });
 
-test('should fetch the expenses from firebase', () => {
+test('should fetch the expenses from firebase', (done) => {
     const store = createMockStore({});
     store.dispatch(startSetExpenses()).then(() => {
         const actions = store.getActions();
